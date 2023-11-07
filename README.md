@@ -1,6 +1,6 @@
 # httpGoPing
 
-This is a simple http server that implements ping requests to servers. Interaction is carried out by GET requests.
+This is a simple http server that implements ping requests to services. Interaction is carried out by GET requests.
 Useful for checking the status of machines behind NAT.
 
 ## Installation

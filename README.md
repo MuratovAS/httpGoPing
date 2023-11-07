@@ -46,10 +46,10 @@ This project was designed to work in conjunction with [homer](https://github.com
 Purpose: Checking the health status of containers and machines on my network, in the `homer` panel.
 
 Problems: 
-	- Not all services have a web interface (ex. `unbound`)
-	- Some services use the `authelia` layer. This makes it impossible to check their status before authorization.
-	- I'm using https self-signed certificates, `cors` doesn't allow me to check the status of them using classic methods.
-	- Many services are located behind NAT, in virtual subnets. They have a strict access policy.
+- Not all services have a web interface (ex. `unbound`)
+- Some services use the `authelia` layer. This makes it impossible to check their status before authorization.
+- I'm using https self-signed certificates, `cors` doesn't allow me to check the status of them using classic methods.
+- Many services are located behind NAT, in virtual subnets. They have a strict access policy.
 
 Using my solution solves these problems.
 

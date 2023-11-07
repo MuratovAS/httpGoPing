@@ -32,4 +32,4 @@ jobs:
         with:
           push: true
           tags: |
-            ghcr.io/MuratovAS/httpGoPing:latest
+            ghcr.io/muratovas/httpgoping:latest

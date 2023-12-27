@@ -15,7 +15,7 @@ on:
 
 jobs:
   build:
-    name: Build
+    name: Preparing environment
     runs-on: ubuntu-latest
     steps:
       # Get the repository's code
@@ -37,7 +37,7 @@ jobs:
             type=ref,event=pr
             type=sha
             
-      - name: Build and push
+      - name: Build container
         uses: docker/build-push-action@v5
         with:
           context: .

@@ -8,7 +8,7 @@ on:
       - 'main'
       - 'dev'
     tags:
-      - 'v*.*.*'
+      - 'v*.*'
   pull_request:
     branches:
       - 'main'
@@ -46,7 +46,7 @@ jobs:
         with:
           # list of Docker images to use as base name for tags
           images: |
-            <specify the image name>
+            ghcr.io/muratovas/httpgoping
           # Docker tags based on the following events/attributes
           tags: |
             type=schedule

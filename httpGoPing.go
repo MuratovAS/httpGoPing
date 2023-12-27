@@ -73,7 +73,6 @@ func main() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		handlePing(w, r)
 	})
-
 	port := getListenPort()
 	log.Printf("httpGoPing started listening on %s\n", port)
 	log.Fatal(http.ListenAndServe(port, nil))

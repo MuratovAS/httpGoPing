@@ -37,12 +37,10 @@ jobs:
             ghcr.io/muratovas/httpgoping
           # Docker tags based on the following events/attributes
           tags: |
-            type=semver
             type=ref,event=branch
             type=semver,pattern={{version}}
             type=semver,pattern={{major}}.{{minor}}
             type=semver,pattern={{major}}
-            type=sha
             
       - name: Build and push
         uses: docker/build-push-action@v5
